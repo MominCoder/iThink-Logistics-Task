@@ -90,6 +90,7 @@ function showFullPost(post) {
 function editPost(post) {
   titleInput.setAttribute("value", post.title);
   contentInput.textContent = post.content;
+  imageInput.files[0] = post.image;
   formSubmit.textContent = "save";
 
   postId.textContent = post.id;
