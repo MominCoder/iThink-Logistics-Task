@@ -38,7 +38,7 @@ function displayBlogPosts() {
 
     if (post.image) {
       imageElement.src = post.image;
-      imageElement.alt = "Post Image";
+      imageElement.alt = post.title;
       imageElement.className = "card-img-top img-fluid rounded d-block";
     }
 
